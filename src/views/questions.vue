@@ -12,7 +12,7 @@ export default {
 
 <template>
     <div id="dev">
-        <h1>Select question type</h1>
+        <h1>Select a certification</h1>
         <div class="buttons">
             <router-link to="/iso9001">
                 <button>iso9001</button>

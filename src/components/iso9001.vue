@@ -46,7 +46,7 @@ export default {
 
 <template>
     <div id="dev">
-        <h1>ISO 9001 - Questions</h1>
+        <h1>ISO 9001 - Certification</h1>
         <div class="question">
             1. How often do you conduct internal audits?
             <div class="answers">
