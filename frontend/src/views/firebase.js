@@ -6,14 +6,13 @@ import { getFirestore } from "firebase/firestore";
 import { getDatabase , ref } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDVc3pP4-XoZeXAX_L1FTlBqgJAPAaXzH4",
-  authDomain: "new-urban-5cf38.firebaseapp.com",
-  databaseURL: "https://new-urban-5cf38-default-rtdb.firebaseio.com",
-  projectId: "new-urban-5cf38",
-  storageBucket: "new-urban-5cf38.appspot.com",
-  messagingSenderId: "431110991205",
-  appId: "1:431110991205:web:960a86c9edc27995eb858c",
-  measurementId: "G-TYHNYEVRFR"
+  apiKey: "AIzaSyAdBEeQjGZIJR3SN4dsgFrMx6x2KVnnSjY",
+  authDomain: "pretest-e8b96.firebaseapp.com",
+  projectId: "pretest-e8b96",
+  storageBucket: "pretest-e8b96.appspot.com",
+  messagingSenderId: "859063906306",
+  appId: "1:859063906306:web:00b266f0dd0d9e7f4bf71b",
+  measurementId: "G-JTV5TDZCSV"
 };
 
 // firebase

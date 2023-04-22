@@ -2,7 +2,6 @@
 <script>
 import aboutUs from '../components/homepage/aboutus.vue'
 import contactUs from '../components/homepage/contactus.vue'
-import categorypage from '../components/homepage/categorypage.vue'
 import homevue from '../components/homepage/Home.vue'
 
 export default {
@@ -15,13 +14,12 @@ export default {
 
 	components: {
 		homevue,
-		categorypage,
 		contactUs,
 		aboutUs,
 	},
 
 	created() {
-		document.title = "Serve To All"
+		document.title = "PreTest"
 	}
 }
 
@@ -31,25 +29,7 @@ export default {
 	<div id="dev">
 		<div class="header">
 			<div class="logo">
-				<div>Serve<span style="color: var(--rose-dark);">To</span>All</div>
-			</div>
-			<div>
-				<nav class="nav-bar navbar navbar-expand-sm navbar-dark">
-					<div class="container">
-						<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
-							data-bs-target="#n_bar" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="n_bar">
-							<ul class="navbar-nav">
-								<li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
-								<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-								<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-								<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-							</ul>
-						</div>
-					</div>
-				</nav>
+				<div>PreTest</div>
 			</div>
 		</div>
 
@@ -57,10 +37,6 @@ export default {
 
 			<div class="page" id="home">
 				<homevue />
-			</div>
-
-			<div class="page" id="services">
-				<categorypage />
 			</div>
 
 			<div class="page" id="about">
@@ -77,6 +53,7 @@ export default {
 </template>
 
 <style scoped>
+
 .nav-bar {
 	text-decoration: none;
 	z-index: 100;
@@ -87,6 +64,9 @@ export default {
 	margin-top: .3em;
 	display: flex;
 	justify-content: space-between;
+
+	position: absolute;
+	z-index: 100;
 }
 
 .collapse {
@@ -101,6 +81,8 @@ button {
 	font-size: 2em;
 	margin-left: 1.5em;
 	margin-top: .2em;
+	color: white;
+	font-weight: 600;
 }
 
 .nav-links {

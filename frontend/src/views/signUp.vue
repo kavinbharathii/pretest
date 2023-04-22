@@ -52,14 +52,14 @@ export default {
         </div>
         <div class="former">
             <form @submit.prevent="signup()" class="signin-form">
-                <h1>Hey there!👋</h1>
+                <h1>Hey there!</h1>
                 <label for="email">Email<input type="text" v-model="form.email" required></label>
                 <label for="password">Password<input type="password" v-model="form.password" required></label>
                 <label for="confirm-password">Confirm Password<input type="password" v-model="form.confirmpassword" required></label>
                 <div class="buttons">
                     <button type="submit" class="prominent">Create Account</button>
                     
-                    <button type="button" class="secondary"><router-link to="/signin">Already an User?</router-link></button>
+                    <button type="button" class="secondary"><router-link to="/signin" style="color: #dedede;">Already an User?</router-link></button>
                     
                 </div>
 
@@ -80,12 +80,19 @@ export default {
 
     width: 100vw;
     height: 100vh;
+
+    background-color: #121212;
+}
+
+h1 {
+    font-weight: 999;
+    color: #84a9ff;
 }
 
 .padder {
     width: 30vw;
     height: 100vh;
-    background-color: #fc3171bf;
+    background-color: #202020;
 }
 
 .former {
@@ -113,6 +120,7 @@ label {
     gap: 10px;
 
     width: 100%;
+    color: #c7c7c7;
 }
 
 .buttons {
@@ -128,20 +136,18 @@ label {
     outline: none;
     height: 2.5em;
     border-radius: 5px;
-    border: 1px solid #fc3171bf;
 }
 
 .prominent {
-    color: #fefefe;
-    background-color: #fc3171bf;
+    color: #d4d4d4;
+    background-color: #4069c8;
 }
 
 .secondary {
-    color: #171717;
-    background-color: #fefefe;
-    border: 1px solid #fc3171bf;
+    color: #d4d4d4;
+    background-color: #02111c;
+    border: 3px solid #4069c8;
 }
-
 
 input {
     outline: none;
@@ -150,7 +156,7 @@ input {
 }
 
 input:focus {
-    border: 3px solid rgba(203, 153, 162,.8);
+    border: 3px solid #84a9ff;
 }
 
 a {
@@ -158,11 +164,11 @@ a {
 }
 
 .password-alert {
-    color: #fa5f54;
+    color: #253f7b;
     width: 100%;
     height: 3rem;
     background-color: #fefefe;
-    border: 2px solid #fa5f54;
+    border: 2px solid #84a9ff;
     border-radius: 5px;
     
     display: flex;

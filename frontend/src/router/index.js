@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/HomeView.vue'
-import categoryServices from '../views/categoryServices.vue'
 import signIn from '../views/signIn.vue'
 import signUp from '../views/signUp.vue'
-import cart from '../views/cartView.vue'
-import adminPage from '../components/adminpage/adminPage.vue'
-import orders from '../views/order.vue'
-import addservices from '../components/adminpage/addservices.vue'
-import addcategory from '../components/adminpage/addcategory.vue'
-import editservices from '../components/adminpage/editservices.vue'
+import questions from '../views/questions.vue'
+
+import iso9001 from '../components/iso9001.vue';
+import iso14001 from '../components/iso14001.vue';
+import iso22000 from '../components/iso22000.vue';
+import iso27001 from '../components/iso27001.vue';
+import iso45001 from '../components/iso45001.vue';
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,96 +35,28 @@ const router = createRouter({
 			}
 		},
 		{
-			path: '/cart',
-			component: cart,
-			meta: {
-				title: 'Cart'
-			}
+			path: '/questions',
+			component: questions
 		},
 		{
-			path: '/yourorders',
-			component: orders,
-			props(route) {
-				return {  useremail : route.query.useremail }
-			},
-			meta: {
-				title: 'Booking Orders'
-			}
+			path: '/iso9001',
+			component: iso9001
 		},
 		{
-			path: '/cctv-services',
-			component: categoryServices,
-			props: {
-				categoryName: 'CCTV'
-			},
-			meta: {
-				title: 'CCTV Services'
-			}
+			path: '/iso14001',
+			component: iso14001
 		},
 		{
-			path: '/computer-services',
-			component: categoryServices,
-			props: {
-				categoryName: 'Computer'
-			},
-			meta: {
-				title: 'Computer Services'
-			}
+			path: '/iso22000',
+			component: iso22000
 		},
 		{
-			path: '/electrician-services',
-			component: categoryServices,
-			props: {
-				categoryName: 'Electrician'
-			},
-			meta: {
-				title: 'Electrician Services'
-			}
+			path: '/iso27001',
+			component: iso27001
 		},
 		{
-			path: '/plumbing-services',
-			component: categoryServices,
-			props: {
-				categoryName: 'Plumbing'
-			},
-			meta: {
-				title: 'Plumbing Services'
-			}
-		},
-		{
-			path: '/admin',
-			component: adminPage,
-			meta: {
-				title: 'Admin Dashboard'
-			}
-		},
-		{
-			path:'/admin/addservices',
-			component: addservices,
-			meta: {
-				title: 'AddServices'
-			}
-		},
-		{
-			path:'/admin/addcategory',
-			component: addcategory,
-			meta: {
-				title: 'AddCategory'
-			}
-		},
-		{
-			path:'/admin/editservices',
-			component: editservices,
-			meta: {
-				title: 'EditServices'
-			}
-		},
-		{
-			path: '/services/:serid',
-			component: categoryServices,
-			// props: {
-			// 	categoryName: $route.params.serid
-			// },
+			path: '/iso45001',
+			component: iso45001
 		}
 	]
 })

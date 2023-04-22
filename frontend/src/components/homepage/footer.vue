@@ -15,7 +15,7 @@ export default {
             <div><font-awesome-icon icon="fa-solid fa-envelope" /></div>
         </div>
         <div class="made-div">
-            <div>© 2023 ServeToAll Pte Ltd. All rights reserved.Made with <font-awesome-icon icon="fa-solid fa-heart hrt-icon" bounce /> by kreativ.</div>
+            <div>© 2023 PreTest Pte Ltd. All rights reserved.Made with <font-awesome-icon icon="fa-solid fa-heart hrt-icon" bounce /> by kreativ.</div>
         </div>
     </div>
 </template>
@@ -23,7 +23,7 @@ export default {
 <style scoped>
 
 .fot{
-    background-color: #fc3171bf;
+    background-color: #00b0f0;
     height: 10vh;
     width: 100%;
     display: flex;
