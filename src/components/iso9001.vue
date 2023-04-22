@@ -36,7 +36,9 @@ export default {
             totalscoreDiv.innerHTML = `<span>Total score: ${scorePercent}%</span><br/>`
 
             if (scorePercent >= 80) {
-                totalscoreDiv.innerHTML += "<span>Awesome, you are eligible for an ISO 9001 certification</span>"
+                totalscoreDiv.innerHTML += "<span>Awesome! You are eligible for an ISO 9001 certification</span>"
+            } else {
+                totalscoreDiv.innerHTML += "<span>Re-evaluate the choices and try again!</span>"
             }
 
         },
