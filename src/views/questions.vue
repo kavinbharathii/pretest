@@ -59,7 +59,7 @@ export default {
 }
 
 button {
-    width: 10vw;
+    width: 200px;
     padding: 1.3em 1.5em;
     background-color: #121212;
     color: #00b0f0;
