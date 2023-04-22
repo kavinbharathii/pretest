@@ -32,7 +32,7 @@ export default {
             console.log(total)
 
             let totalscoreDiv = document.querySelector('.total-score')
-            totalscoreDiv.innerHtml = "Total Score: " + total
+            totalscoreDiv.innerHTML = `Total score: ${total}/${this.scores.length * 4}`
 
         },
     },
@@ -237,7 +237,7 @@ export default {
         </div>
         <button @click="this.totalScore">Submit</button>
         <div class="total-score">
-
+            
         </div>
     </div>
 </template>
@@ -281,5 +281,6 @@ button {
 .total-score {
     font-size: 2em;
     color: #00b0f0;
+    margin: 1.5em 0em;
 }
 </style>
