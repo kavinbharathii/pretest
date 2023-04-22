@@ -119,16 +119,13 @@ export default {
                         <div>
                             <span class="material-symbols-outlined">location_on</span>
                         </div>
-                        No.200,East Sambandam Road,R.S.Puram, Coimbatore, Tamil Nadu 641002
+                        14/3 Tholkappiar 1st street, mm Town Center, Kattankulathur, 603203
                     </div>
                 </div>
             </div>
 
             <div class="right">
                 <h1 class="tle" style="color: #00b0f0;">Contact Us</h1>
-                <div class="des">Interested in being a partner? Thinking of offering your products or services on Servbees?
-                    Have
-                    some questions? Get in touch with us so we can get buzzy together!</div>
                 <div class="name-email">
                     <div class="name"><input type="text" required v-model="this.msgData.fullName"><span>Full Name</span>
                     </div>
