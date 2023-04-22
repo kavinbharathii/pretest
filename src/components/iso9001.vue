@@ -30,9 +30,14 @@ export default {
             }
 
             console.log(total)
+            let scorePercent = Math.round((total / (this.scores.length * 3)) * 100)
 
             let totalscoreDiv = document.querySelector('.total-score')
-            totalscoreDiv.innerHTML = `Total score: ${total}/${this.scores.length * 4}`
+            totalscoreDiv.innerHTML = `<span>Total score: ${scorePercent}%</span><br/>`
+
+            if (scorePercent >= 80) {
+                totalscoreDiv.innerHTML += "<span>Awesome, you are eligible for an ISO 9001 certification</span>"
+            }
 
         },
     },
@@ -235,7 +240,7 @@ export default {
                     processes for identifying industry standards</span>
             </div>
         </div>
-        <button @click="this.totalScore">Submit</button>
+        <button @click="this.totalScore">Check your results</button>
         <div class="total-score">
             
         </div>
